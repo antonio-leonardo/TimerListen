@@ -25,7 +25,7 @@ static void Main()
 ```
 
 # Concept
-The [Timer Listen](https://github.com/antonio-leonardo/TimerListen) class enjoys features of .NET Framework [Timer](https://docs.microsoft.com/en-us/dotnet/api/system.timers.timer) class, that has a pooling thread, based on Rounding Robing Scheduling (https://en.wikipedia.org/wiki/Round-robin_scheduling)
+The [Timer Listen](https://github.com/antonio-leonardo/TimerListen) class enjoys features of .NET Framework [Timer](https://docs.microsoft.com/en-us/dotnet/api/system.timers.timer) class, that has a pooling thread, based on [Rounding Robing Scheduling](https://en.wikipedia.org/wiki/Round-robin_scheduling)
 
 ----------------------
 ## License
