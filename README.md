@@ -1,5 +1,5 @@
 # Timer Listen
-If do you want do add one Timer Listening during on current thread of your application, this class auxiliate this job. TimerListen class has a decople code that can be used with asynchrnouly or synchronouly with User Interface.
+If do you want do add one Timer Listening during on current thread of your application, this class auxiliate this job. TimerListen class has a decople code that can be used with asynchronously or synchronously (by [SynchronizationContext](https://docs.microsoft.com/en-us/dotnet/api/system.threading.synchronizationcontext)) with User Interface.
 
 The approach is very simple: define on method that needs to be executed frequently (for example, between one-one second steps or ten-and-ten seconds steps etc.), like bellow:
 ```cs
@@ -23,6 +23,9 @@ static void Main()
   listening.Stop();
 }
 ```
+
+# Concept
+The [Timer Listen](https://github.com/antonio-leonardo/TimerListen) class enjoys features of .NET Framework [Timer](https://docs.microsoft.com/en-us/dotnet/api/system.timers.timer) class, that has a pooling thread, based on Rounding Robing Scheduling (https://en.wikipedia.org/wiki/Round-robin_scheduling)
 
 ----------------------
 ## License
