@@ -9,9 +9,18 @@ public static void MethodToExecuteFrequently()
 }
 ```
 
-The instance of TimerListening is define as a field class:
+The instance of TimerListen is define as a field class:
 ```cs
 public static TimerListen listening = new TimerListen(1000, new Action(() => MethodToExecuteFrequently()))
+```
+The developer can instance with sychronized a UI Thread:
+```cs
+//This object was assigned at UI layer:
+SynchronizationContext uiThread = SynchronizationContext.Current;
+
+//The TimerListen object with parameters, including the threadContext:
+public static TimerListen listening = new TimerListen(1000, new Tuple<Action, SynchronizationContext>(
+   ()=>Method, uiThread));
 ```
 
 And define the starts and the end of listening:
