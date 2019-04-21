@@ -1,4 +1,4 @@
-# Timer Listen
+# C# Timer Listen
 If do you want do add one Timer Listening during on current thread of your application, this class auxiliate this job. TimerListen class has a decople code that can be used with asynchronously or synchronously (by [SynchronizationContext](https://docs.microsoft.com/en-us/dotnet/api/system.threading.synchronizationcontext)) with User Interface.
 
 The approach is very simple: define on method that needs to be executed frequently (for example, between one-one second steps or ten-and-ten seconds steps etc.), like bellow:
